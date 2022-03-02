@@ -3,7 +3,7 @@
 import requests
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
-#import requests from xml.etree import ElementTree
+import requests from xml.etree import ElementTree
 
 def toolkit_get_cve(cve, token):
     URL = "https://gistoolkit..com/V1/Vulnerabilities/" +cve
@@ -21,5 +21,5 @@ def toolkit_get_cve(cve, token):
     if rating == None :
         print('GIS toolkit return None')
         return ''
-  #print('**** CVE: ' + cve)
- #print(' Rating: ' + rating.text) return rating.text
+ print('**** CVE: ' + cve)
+ print(' Rating: ' + rating.text) return rating.text
