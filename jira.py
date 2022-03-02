@@ -1,7 +1,6 @@
 
-"""
-jira.py
-""
+#jira.py
+
 import requests
 import os
 
